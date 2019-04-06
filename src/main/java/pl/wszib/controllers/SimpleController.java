@@ -98,6 +98,14 @@ public class SimpleController {
         return list;
     }
 
+    @GetMapping("fragments")
+    public String fragments (Model model){
+        return "fragments/fragmentsTemplate";
+    }
 
+    @GetMapping("fragmentsT")
+    public String fragmentsT (Model model){
+        return "fragments/fragmentsTemplateT";
+    }
 
 }
